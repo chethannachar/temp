@@ -1,0 +1,156 @@
+ 
+/* Base style for mobile devices (less than 600px) */
+.h1 {
+    font-weight: bold;
+    color: #2c3e50; /* Deep blue color */
+    text-align: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Enhancements */
+  .h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds depth */
+    position: relative;
+  }
+  
+  /* Decorative Underline */
+  .h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #e74c3c;  /* Contrasting color for emphasis */
+    border-radius: 2px;
+  }
+  
+ 
+ /* Base style for mobile devices (less than 600px) */
+.h1 {
+    font-size: 60px; /* Base font size for small screens */
+  }
+  
+  /* For screens 600px and wider */
+  /* For screens 600px and wider */
+@media (min-width: 600px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  /* For screens 768px and wider */
+  @media (min-width: 768px) {
+    h1 {
+        font-size: 50px;
+
+    }
+  }
+  
+  /* For screens 1024px and wider */
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  
+  /* For screens 1280px and wider */
+  @media (min-width: 1280px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  /* styles.css */
+  /* styles.css */
+
+/* Base Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Soothing light gray background */
+  }
+
+  .actions {
+    max-width: 800px;
+    margin: 40px auto; /* Center the container */
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .action:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+  }
+  
+  .action:last-child {
+    margin-bottom: 0;
+  }
+  
+  .action button {
+    display: flex;
+    align-items: center;
+    background-color: #1abc9c; /* Vibrant green */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action button:hover {
+    background-color: #780adf98; /* Darker green on hover */
+  }
+  
+  .action button svg {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px;
+  }
+  
+  .action p {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #555555;
+  }
+  @media (max-width: 768px) {
+    .actions {
+      margin-top: 140px; /* Increase margin for smaller screens */
+      padding: 15px; /* Reduce padding for better fit */
+    }
+  
+    .action {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center;
+    }
+  
+    .action p {
+      margin-left: 0; /* Remove left margin */
+      margin-top: 10px; /* Add spacing */
+    }
+  
+    .action button {
+      font-size: 20px; /* Adjust button size */
+      padding: 10px 16px;
+    }
+  }
+  
